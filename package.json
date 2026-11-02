@@ -1,0 +1,46 @@
+{
+  "scripts": {
+    "dev": "tsx server.ts",
+    "dev:next": "next dev",
+    "build": "next build",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "db:push": "drizzle-kit push",
+    "start": "NODE_ENV=production tsx server.ts",
+    "pretest:e2e": "npm run build"
+  },
+  "dependencies": {
+    "@types/better-sqlite3": "latest",
+    "better-sqlite3": "latest",
+    "drizzle-orm": "latest",
+    "drizzle-zod": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "socket.io": "latest",
+    "socket.io-client": "latest",
+    "tsx": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@playwright/test": "latest",
+    "@tailwindcss/postcss": "latest",
+    "@testing-library/jest-dom": "latest",
+    "@testing-library/react": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "drizzle-kit": "latest",
+    "eslint": "^9.39.1",
+    "eslint-config-next": "latest",
+    "jsdom": "latest",
+    "tailwindcss": "latest",
+    "typescript": "^5.9.3",
+    "vitest": "latest",
+    "@testing-library/dom": "latest"
+  },
+  "private": true,
+  "type": "module"
+}
